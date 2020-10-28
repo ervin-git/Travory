@@ -9,21 +9,37 @@
 /* Begin PBXBuildFile section */
 		DA258DA4254919F80051366E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA258DA3254919F80051366E /* AppDelegate.swift */; };
 		DA258DA6254919F80051366E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA258DA5254919F80051366E /* SceneDelegate.swift */; };
-		DA258DA8254919F80051366E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA258DA7254919F80051366E /* ViewController.swift */; };
 		DA258DAB254919F80051366E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA258DA9254919F80051366E /* Main.storyboard */; };
 		DA258DAD254919FC0051366E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA258DAC254919FC0051366E /* Assets.xcassets */; };
 		DA258DB0254919FC0051366E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA258DAE254919FC0051366E /* LaunchScreen.storyboard */; };
+		DA258DB8254921410051366E /* TravoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA258DB7254921410051366E /* TravoryModel.swift */; };
+		DA258DBA2549215B0051366E /* TravoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA258DB92549215B0051366E /* TravoryManager.swift */; };
+		DA258DC5254923460051366E /* Travory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA258DC4254923460051366E /* Travory.swift */; };
+		DA258DC7254923880051366E /* LocationTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA258DC6254923880051366E /* LocationTable.swift */; };
+		DA6F94B7254923D4005181D9 /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6F94B6254923D4005181D9 /* LocationView.swift */; };
+		DA6F94B925492400005181D9 /* LocationMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6F94B825492400005181D9 /* LocationMap.swift */; };
+		DA6F94BB25492428005181D9 /* FavoritesTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6F94BA25492428005181D9 /* FavoritesTable.swift */; };
+		DA6F94BD2549243A005181D9 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6F94BC2549243A005181D9 /* FavoritesView.swift */; };
+		DA6F94BF25492449005181D9 /* FavoritesMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6F94BE25492449005181D9 /* FavoritesMap.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DA258DA0254919F80051366E /* Travory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Travory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA258DA3254919F80051366E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA258DA5254919F80051366E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DA258DA7254919F80051366E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DA258DAA254919F80051366E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DA258DAC254919FC0051366E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA258DAF254919FC0051366E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA258DB1254919FC0051366E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA258DB7254921410051366E /* TravoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravoryModel.swift; sourceTree = "<group>"; };
+		DA258DB92549215B0051366E /* TravoryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravoryManager.swift; sourceTree = "<group>"; };
+		DA258DC4254923460051366E /* Travory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Travory.swift; sourceTree = "<group>"; };
+		DA258DC6254923880051366E /* LocationTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTable.swift; sourceTree = "<group>"; };
+		DA6F94B6254923D4005181D9 /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
+		DA6F94B825492400005181D9 /* LocationMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationMap.swift; sourceTree = "<group>"; };
+		DA6F94BA25492428005181D9 /* FavoritesTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTable.swift; sourceTree = "<group>"; };
+		DA6F94BC2549243A005181D9 /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
+		DA6F94BE25492449005181D9 /* FavoritesMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesMap.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +72,31 @@
 		DA258DA2254919F80051366E /* Travory */ = {
 			isa = PBXGroup;
 			children = (
+				DA258DBD254921D90051366E /* Controllers */,
 				DA258DA3254919F80051366E /* AppDelegate.swift */,
 				DA258DA5254919F80051366E /* SceneDelegate.swift */,
-				DA258DA7254919F80051366E /* ViewController.swift */,
 				DA258DA9254919F80051366E /* Main.storyboard */,
 				DA258DAC254919FC0051366E /* Assets.xcassets */,
 				DA258DAE254919FC0051366E /* LaunchScreen.storyboard */,
 				DA258DB1254919FC0051366E /* Info.plist */,
+				DA258DB7254921410051366E /* TravoryModel.swift */,
+				DA258DB92549215B0051366E /* TravoryManager.swift */,
 			);
 			path = Travory;
+			sourceTree = "<group>";
+		};
+		DA258DBD254921D90051366E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DA258DC4254923460051366E /* Travory.swift */,
+				DA258DC6254923880051366E /* LocationTable.swift */,
+				DA6F94B6254923D4005181D9 /* LocationView.swift */,
+				DA6F94B825492400005181D9 /* LocationMap.swift */,
+				DA6F94BA25492428005181D9 /* FavoritesTable.swift */,
+				DA6F94BC2549243A005181D9 /* FavoritesView.swift */,
+				DA6F94BE25492449005181D9 /* FavoritesMap.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +170,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA258DA8254919F80051366E /* ViewController.swift in Sources */,
+				DA6F94BD2549243A005181D9 /* FavoritesView.swift in Sources */,
+				DA258DC5254923460051366E /* Travory.swift in Sources */,
+				DA258DC7254923880051366E /* LocationTable.swift in Sources */,
+				DA258DBA2549215B0051366E /* TravoryManager.swift in Sources */,
+				DA6F94B925492400005181D9 /* LocationMap.swift in Sources */,
+				DA258DB8254921410051366E /* TravoryModel.swift in Sources */,
+				DA6F94B7254923D4005181D9 /* LocationView.swift in Sources */,
 				DA258DA4254919F80051366E /* AppDelegate.swift in Sources */,
+				DA6F94BB25492428005181D9 /* FavoritesTable.swift in Sources */,
+				DA6F94BF25492449005181D9 /* FavoritesMap.swift in Sources */,
 				DA258DA6254919F80051366E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
