@@ -19,7 +19,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="e3B-BF-Enx"/>
                     <connections>
-                        <segue destination="uGI-CN-m1e" kind="presentation" identifier="seg_map" id="au7-4A-wMV"/>
+                        <segue destination="8jo-FU-6o3" kind="presentation" id="aM8-JA-1dM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f0l-M2-Rvj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -27,12 +27,34 @@
             <point key="canvasLocation" x="2864" y="133"/>
         </scene>
         <!--Map View-->
-        <scene sceneID="MdI-D1-lS6">
+        <scene sceneID="PcR-YJ-J4n">
             <objects>
-                <viewController id="uGI-CN-m1e" customClass="MapView" customModule="Travory" customModuleProvider="target" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nlS-Xe-asO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController id="8jo-FU-6o3" customClass="MapView" customModule="Travory" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Jfy-Su-pQZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="DJo-hX-Uwe">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="HBc-qL-Q1u" firstAttribute="trailing" secondItem="DJo-hX-Uwe" secondAttribute="trailing" id="D0B-Hk-vus"/>
+                            <constraint firstItem="DJo-hX-Uwe" firstAttribute="leading" secondItem="HBc-qL-Q1u" secondAttribute="leading" id="JN5-Na-eOt"/>
+                            <constraint firstItem="HBc-qL-Q1u" firstAttribute="bottom" secondItem="DJo-hX-Uwe" secondAttribute="bottom" id="N4f-94-t4b"/>
+                            <constraint firstItem="DJo-hX-Uwe" firstAttribute="centerX" secondItem="Jfy-Su-pQZ" secondAttribute="centerX" id="VX2-GK-5YJ"/>
+                            <constraint firstItem="DJo-hX-Uwe" firstAttribute="top" secondItem="HBc-qL-Q1u" secondAttribute="top" id="rug-83-ldM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="HBc-qL-Q1u"/>
+                    </view>
+                    <connections>
+                        <outlet property="map" destination="DJo-hX-Uwe" id="BxH-0b-3EQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xJf-Yb-9bh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3732" y="133"/>
+            <point key="canvasLocation" x="3722" y="133"/>
         </scene>
         <!--Location-->
         <scene sceneID="XQx-Hq-Mc2">
@@ -134,40 +156,9 @@
             </objects>
             <point key="canvasLocation" x="1564" y="526"/>
         </scene>
-        <!--Favorites View-->
-        <scene sceneID="jDj-tM-Qfl">
-            <objects>
-                <viewController id="oVq-oP-iQ2" customClass="FavoritesView" customModule="Travory" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="LY8-Yp-4SY">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="HBL-dM-HIx"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="Qpq-FC-9ez"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xqd-sl-SCs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1981" y="1684"/>
-        </scene>
-        <!--Favorites Map-->
-        <scene sceneID="n9B-3O-qzh">
-            <objects>
-                <viewController id="b6E-Qu-PU5" customClass="FavoritesMap" customModule="Travory" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="6AX-ws-mZL">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="VOx-ai-78e"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="LsX-xr-gR3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2936" y="1981"/>
-        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="uma-AQ-W4i"/>
+        <segue reference="6kQ-RG-dpk"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="mappin.and.ellipse" catalog="system" width="118" height="128"/>
