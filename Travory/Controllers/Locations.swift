@@ -1,5 +1,5 @@
 //
-//  LocationTable.swift
+//  Locations.swift
 //  Travory
 //
 //  Created by Ervin Canigur on 10/27/20.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LocationTable: UITableViewController {
+class Locations: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,7 +29,7 @@ class LocationTable: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 1
+        return 0
     }
 
     /*

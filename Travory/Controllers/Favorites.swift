@@ -1,5 +1,5 @@
 //
-//  FavoritesTable.swift
+//  Favorites.swift
 //  Travory
 //
 //  Created by Ervin Canigur on 10/27/20.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FavoritesTable: UITableViewController {
+class Favorites: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

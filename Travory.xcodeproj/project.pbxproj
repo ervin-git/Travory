@@ -15,12 +15,10 @@
 		DA258DB8254921410051366E /* TravoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA258DB7254921410051366E /* TravoryModel.swift */; };
 		DA258DBA2549215B0051366E /* TravoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA258DB92549215B0051366E /* TravoryManager.swift */; };
 		DA258DC5254923460051366E /* Travory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA258DC4254923460051366E /* Travory.swift */; };
-		DA258DC7254923880051366E /* LocationTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA258DC6254923880051366E /* LocationTable.swift */; };
-		DA6F94B7254923D4005181D9 /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6F94B6254923D4005181D9 /* LocationView.swift */; };
-		DA6F94B925492400005181D9 /* LocationMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6F94B825492400005181D9 /* LocationMap.swift */; };
-		DA6F94BB25492428005181D9 /* FavoritesTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6F94BA25492428005181D9 /* FavoritesTable.swift */; };
-		DA6F94BD2549243A005181D9 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6F94BC2549243A005181D9 /* FavoritesView.swift */; };
-		DA6F94BF25492449005181D9 /* FavoritesMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6F94BE25492449005181D9 /* FavoritesMap.swift */; };
+		DA6F94C1254925EC005181D9 /* Favorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6F94C0254925EC005181D9 /* Favorites.swift */; };
+		DA6F94C325492607005181D9 /* InformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6F94C225492607005181D9 /* InformationView.swift */; };
+		DA6F94C525492611005181D9 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6F94C425492611005181D9 /* MapView.swift */; };
+		DA6F94C725492668005181D9 /* Locations.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6F94C625492668005181D9 /* Locations.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,12 +32,10 @@
 		DA258DB7254921410051366E /* TravoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravoryModel.swift; sourceTree = "<group>"; };
 		DA258DB92549215B0051366E /* TravoryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravoryManager.swift; sourceTree = "<group>"; };
 		DA258DC4254923460051366E /* Travory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Travory.swift; sourceTree = "<group>"; };
-		DA258DC6254923880051366E /* LocationTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTable.swift; sourceTree = "<group>"; };
-		DA6F94B6254923D4005181D9 /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
-		DA6F94B825492400005181D9 /* LocationMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationMap.swift; sourceTree = "<group>"; };
-		DA6F94BA25492428005181D9 /* FavoritesTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTable.swift; sourceTree = "<group>"; };
-		DA6F94BC2549243A005181D9 /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
-		DA6F94BE25492449005181D9 /* FavoritesMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesMap.swift; sourceTree = "<group>"; };
+		DA6F94C0254925EC005181D9 /* Favorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorites.swift; sourceTree = "<group>"; };
+		DA6F94C225492607005181D9 /* InformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationView.swift; sourceTree = "<group>"; };
+		DA6F94C425492611005181D9 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		DA6F94C625492668005181D9 /* Locations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Locations.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,12 +85,10 @@
 			isa = PBXGroup;
 			children = (
 				DA258DC4254923460051366E /* Travory.swift */,
-				DA258DC6254923880051366E /* LocationTable.swift */,
-				DA6F94B6254923D4005181D9 /* LocationView.swift */,
-				DA6F94B825492400005181D9 /* LocationMap.swift */,
-				DA6F94BA25492428005181D9 /* FavoritesTable.swift */,
-				DA6F94BC2549243A005181D9 /* FavoritesView.swift */,
-				DA6F94BE25492449005181D9 /* FavoritesMap.swift */,
+				DA6F94C0254925EC005181D9 /* Favorites.swift */,
+				DA6F94C225492607005181D9 /* InformationView.swift */,
+				DA6F94C425492611005181D9 /* MapView.swift */,
+				DA6F94C625492668005181D9 /* Locations.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -170,16 +164,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA6F94BD2549243A005181D9 /* FavoritesView.swift in Sources */,
+				DA6F94C725492668005181D9 /* Locations.swift in Sources */,
+				DA6F94C325492607005181D9 /* InformationView.swift in Sources */,
+				DA6F94C525492611005181D9 /* MapView.swift in Sources */,
 				DA258DC5254923460051366E /* Travory.swift in Sources */,
-				DA258DC7254923880051366E /* LocationTable.swift in Sources */,
 				DA258DBA2549215B0051366E /* TravoryManager.swift in Sources */,
-				DA6F94B925492400005181D9 /* LocationMap.swift in Sources */,
 				DA258DB8254921410051366E /* TravoryModel.swift in Sources */,
-				DA6F94B7254923D4005181D9 /* LocationView.swift in Sources */,
+				DA6F94C1254925EC005181D9 /* Favorites.swift in Sources */,
 				DA258DA4254919F80051366E /* AppDelegate.swift in Sources */,
-				DA6F94BB25492428005181D9 /* FavoritesTable.swift in Sources */,
-				DA6F94BF25492449005181D9 /* FavoritesMap.swift in Sources */,
 				DA258DA6254919F80051366E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,5 +1,5 @@
 //
-//  LocationView.swift
+//  InformationView.swift
 //  Travory
 //
 //  Created by Ervin Canigur on 10/27/20.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LocationView: UIViewController {
+class InformationView: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
