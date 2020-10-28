@@ -68,6 +68,7 @@
 		DA258DA2254919F80051366E /* Travory */ = {
 			isa = PBXGroup;
 			children = (
+				DA6F94C825492745005181D9 /* Model */,
 				DA258DBD254921D90051366E /* Controllers */,
 				DA258DA3254919F80051366E /* AppDelegate.swift */,
 				DA258DA5254919F80051366E /* SceneDelegate.swift */,
@@ -75,7 +76,6 @@
 				DA258DAC254919FC0051366E /* Assets.xcassets */,
 				DA258DAE254919FC0051366E /* LaunchScreen.storyboard */,
 				DA258DB1254919FC0051366E /* Info.plist */,
-				DA258DB7254921410051366E /* TravoryModel.swift */,
 				DA258DB92549215B0051366E /* TravoryManager.swift */,
 			);
 			path = Travory;
@@ -91,6 +91,14 @@
 				DA6F94C625492668005181D9 /* Locations.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		DA6F94C825492745005181D9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DA258DB7254921410051366E /* TravoryModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
