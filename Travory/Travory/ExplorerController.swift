@@ -8,11 +8,7 @@
 
 import UIKit
 
-class ListPageController: UITableViewController {
-    
-    
-    
-    
+class ExplorerController: UITableViewController {
     let backgroundImage = UIImageView(image: UIImage(named: "backgroundExplore"))
     
     override func viewWillAppear(_ animated: Bool) {
@@ -25,10 +21,7 @@ class ListPageController: UITableViewController {
 
         backgroundImage.contentMode = .scaleAspectFill
         tableView.backgroundView = backgroundImage
-
     }
-
-    // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
@@ -39,9 +32,4 @@ class ListPageController: UITableViewController {
         // #warning Incomplete implementation, return the number of rows
         return 0
     }
-
-    
-
-    
-
 }

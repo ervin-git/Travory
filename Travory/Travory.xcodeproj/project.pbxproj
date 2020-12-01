@@ -9,27 +9,29 @@
 /* Begin PBXBuildFile section */
 		3F3B0071256DE52B0065CE4C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3B0070256DE52B0065CE4C /* AppDelegate.swift */; };
 		3F3B0073256DE52B0065CE4C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3B0072256DE52B0065CE4C /* SceneDelegate.swift */; };
-		3F3B0075256DE52B0065CE4C /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3B0074256DE52B0065CE4C /* FirstViewController.swift */; };
+		3F3B0075256DE52B0065CE4C /* CountrySelectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3B0074256DE52B0065CE4C /* CountrySelectionController.swift */; };
 		3F3B0077256DE52B0065CE4C /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3B0076256DE52B0065CE4C /* SecondViewController.swift */; };
 		3F3B007A256DE52B0065CE4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F3B0078256DE52B0065CE4C /* Main.storyboard */; };
 		3F3B007C256DE52E0065CE4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F3B007B256DE52E0065CE4C /* Assets.xcassets */; };
 		3F3B007F256DE52E0065CE4C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F3B007D256DE52E0065CE4C /* LaunchScreen.storyboard */; };
-		3F3B008F256E005A0065CE4C /* splashController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3B008E256E005A0065CE4C /* splashController.swift */; };
-		3F6077D02575CB4700A22442 /* ListPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6077CF2575CB4700A22442 /* ListPageController.swift */; };
+		3F3B008F256E005A0065CE4C /* SplashController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3B008E256E005A0065CE4C /* SplashController.swift */; };
+		3F6077D02575CB4700A22442 /* ExplorerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6077CF2575CB4700A22442 /* ExplorerController.swift */; };
+		DABE53232575DE9600C5C47B /* TravoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABE53222575DE9600C5C47B /* TravoryModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3F3B006D256DE52B0065CE4C /* Travory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Travory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F3B0070256DE52B0065CE4C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F3B0072256DE52B0065CE4C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3F3B0074256DE52B0065CE4C /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		3F3B0074256DE52B0065CE4C /* CountrySelectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountrySelectionController.swift; sourceTree = "<group>"; };
 		3F3B0076256DE52B0065CE4C /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		3F3B0079256DE52B0065CE4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3F3B007B256DE52E0065CE4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F3B007E256DE52E0065CE4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F3B0080256DE52E0065CE4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3F3B008E256E005A0065CE4C /* splashController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = splashController.swift; sourceTree = "<group>"; };
-		3F6077CF2575CB4700A22442 /* ListPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPageController.swift; sourceTree = "<group>"; };
+		3F3B008E256E005A0065CE4C /* SplashController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashController.swift; sourceTree = "<group>"; };
+		3F6077CF2575CB4700A22442 /* ExplorerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplorerController.swift; sourceTree = "<group>"; };
+		DABE53222575DE9600C5C47B /* TravoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravoryModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,14 +66,15 @@
 			children = (
 				3F3B0070256DE52B0065CE4C /* AppDelegate.swift */,
 				3F3B0072256DE52B0065CE4C /* SceneDelegate.swift */,
-				3F3B0074256DE52B0065CE4C /* FirstViewController.swift */,
+				3F3B0074256DE52B0065CE4C /* CountrySelectionController.swift */,
 				3F3B0076256DE52B0065CE4C /* SecondViewController.swift */,
 				3F3B0078256DE52B0065CE4C /* Main.storyboard */,
 				3F3B007B256DE52E0065CE4C /* Assets.xcassets */,
 				3F3B0080256DE52E0065CE4C /* Info.plist */,
 				3F3B007D256DE52E0065CE4C /* LaunchScreen.storyboard */,
-				3F3B008E256E005A0065CE4C /* splashController.swift */,
-				3F6077CF2575CB4700A22442 /* ListPageController.swift */,
+				3F3B008E256E005A0065CE4C /* SplashController.swift */,
+				3F6077CF2575CB4700A22442 /* ExplorerController.swift */,
+				DABE53222575DE9600C5C47B /* TravoryModel.swift */,
 			);
 			path = Travory;
 			sourceTree = "<group>";
@@ -148,11 +151,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F3B0077256DE52B0065CE4C /* SecondViewController.swift in Sources */,
-				3F3B0075256DE52B0065CE4C /* FirstViewController.swift in Sources */,
-				3F6077D02575CB4700A22442 /* ListPageController.swift in Sources */,
-				3F3B008F256E005A0065CE4C /* splashController.swift in Sources */,
+				3F3B0075256DE52B0065CE4C /* CountrySelectionController.swift in Sources */,
+				3F6077D02575CB4700A22442 /* ExplorerController.swift in Sources */,
+				3F3B008F256E005A0065CE4C /* SplashController.swift in Sources */,
 				3F3B0071256DE52B0065CE4C /* AppDelegate.swift in Sources */,
 				3F3B0073256DE52B0065CE4C /* SceneDelegate.swift in Sources */,
+				DABE53232575DE9600C5C47B /* TravoryModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
