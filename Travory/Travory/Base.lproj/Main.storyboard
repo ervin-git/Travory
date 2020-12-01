@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xH1-fd-pOU">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xH1-fd-pOU">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -140,10 +140,10 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UX9-ta-z5h">
-                                <rect key="frame" x="10" y="269" width="355" height="35"/>
+                                <rect key="frame" x="59.5" y="269" width="256" height="35"/>
                                 <color key="backgroundColor" red="0.99993377923965454" green="1" blue="0.9998818039894104" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="355" id="0BG-kW-vzB"/>
+                                    <constraint firstAttribute="width" constant="256" id="T3j-41-Li3"/>
                                     <constraint firstAttribute="height" constant="35" id="YXI-J1-zs7"/>
                                 </constraints>
                                 <attributedString key="attributedText">
@@ -190,6 +190,31 @@
                                 </attributedString>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tc7-rQ-w6Q">
+                                <rect key="frame" x="330.5" y="269" width="26" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="aKY-jT-OOZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                <state key="normal" image="map" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                                </state>
+                                <connections>
+                                    <action selector="goToMap:" destination="Y4R-bJ-tvg" eventType="touchUpInside" id="DyS-qH-IbA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ja0-jl-qUA">
+                                <rect key="frame" x="17.5" y="269" width="27" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="mNn-xf-e9Q"/>
+                                </constraints>
+                                <state key="normal" image="star" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                                </state>
+                                <connections>
+                                    <action selector="addToFav:" destination="Y4R-bJ-tvg" eventType="touchUpInside" id="43m-ly-ezs"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.93183183670043945" green="0.84341031312942505" blue="0.67528104782104492" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -197,12 +222,16 @@
                             <constraint firstItem="0PT-zi-2Qm" firstAttribute="centerX" secondItem="Xuh-2N-tJi" secondAttribute="centerX" id="9L3-ed-l1U"/>
                             <constraint firstItem="PBP-2K-Bkv" firstAttribute="trailing" secondItem="jTH-F0-FxM" secondAttribute="trailing" constant="10" id="9Rm-OC-OJE"/>
                             <constraint firstItem="jTH-F0-FxM" firstAttribute="leading" secondItem="PBP-2K-Bkv" secondAttribute="leading" constant="10" id="BSy-Wl-3ph"/>
+                            <constraint firstItem="tc7-rQ-w6Q" firstAttribute="leading" secondItem="UX9-ta-z5h" secondAttribute="trailing" constant="15" id="NZT-pM-lEG"/>
                             <constraint firstItem="rBD-oK-tLR" firstAttribute="centerX" secondItem="Xuh-2N-tJi" secondAttribute="centerX" id="QzZ-4O-unV"/>
                             <constraint firstItem="jTH-F0-FxM" firstAttribute="top" secondItem="UX9-ta-z5h" secondAttribute="bottom" constant="20" id="S38-Gn-psD"/>
                             <constraint firstItem="PBP-2K-Bkv" firstAttribute="trailing" secondItem="0PT-zi-2Qm" secondAttribute="trailing" constant="10" id="Vbr-27-scm"/>
                             <constraint firstItem="UX9-ta-z5h" firstAttribute="top" secondItem="rBD-oK-tLR" secondAttribute="bottom" constant="10" id="XXb-mz-6b2"/>
                             <constraint firstItem="rBD-oK-tLR" firstAttribute="top" secondItem="PBP-2K-Bkv" secondAttribute="top" constant="10" id="ZMX-jb-hrP"/>
+                            <constraint firstItem="Ja0-jl-qUA" firstAttribute="top" secondItem="rBD-oK-tLR" secondAttribute="bottom" constant="10" id="dHX-XN-u6u"/>
                             <constraint firstItem="0PT-zi-2Qm" firstAttribute="top" secondItem="jTH-F0-FxM" secondAttribute="bottom" constant="10" id="gAH-sY-3U2"/>
+                            <constraint firstItem="tc7-rQ-w6Q" firstAttribute="top" secondItem="rBD-oK-tLR" secondAttribute="bottom" constant="10" id="hzd-aQ-neX"/>
+                            <constraint firstItem="UX9-ta-z5h" firstAttribute="leading" secondItem="Ja0-jl-qUA" secondAttribute="trailing" constant="15" id="r4s-4n-RXx"/>
                             <constraint firstItem="UX9-ta-z5h" firstAttribute="centerX" secondItem="Xuh-2N-tJi" secondAttribute="centerX" id="vf5-Q8-fHK"/>
                             <constraint firstItem="0PT-zi-2Qm" firstAttribute="leading" secondItem="PBP-2K-Bkv" secondAttribute="leading" constant="10" id="yvl-se-JJ7"/>
                         </constraints>
@@ -345,6 +374,7 @@
         <image name="backgroundExplore" width="804" height="1395"/>
         <image name="backgroundSplash" width="2248" height="2847"/>
         <image name="globe" catalog="system" width="128" height="121"/>
+        <image name="map" catalog="system" width="128" height="113"/>
         <image name="star" catalog="system" width="128" height="116"/>
     </resources>
 </document>

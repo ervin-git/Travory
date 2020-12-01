@@ -43,4 +43,13 @@ class InfoController: UIViewController {
             }
         }).resume()
     }
+    
+    @IBAction func addToFav(_ sender: Any) {
+        
+    }
+    
+    @IBAction func goToMap(_ sender: Any) {
+        
+    }
+    
 }
