@@ -16,6 +16,7 @@
 		3F3B007F256DE52E0065CE4C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F3B007D256DE52E0065CE4C /* LaunchScreen.storyboard */; };
 		3F3B008F256E005A0065CE4C /* splashController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3B008E256E005A0065CE4C /* splashController.swift */; };
 		3F6077D02575CB4700A22442 /* ListPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6077CF2575CB4700A22442 /* ListPageController.swift */; };
+		3F6077D22575E11500A22442 /* InfoPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6077D12575E11500A22442 /* InfoPageController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		3F3B0080256DE52E0065CE4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F3B008E256E005A0065CE4C /* splashController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = splashController.swift; sourceTree = "<group>"; };
 		3F6077CF2575CB4700A22442 /* ListPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPageController.swift; sourceTree = "<group>"; };
+		3F6077D12575E11500A22442 /* InfoPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPageController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				3F3B007D256DE52E0065CE4C /* LaunchScreen.storyboard */,
 				3F3B008E256E005A0065CE4C /* splashController.swift */,
 				3F6077CF2575CB4700A22442 /* ListPageController.swift */,
+				3F6077D12575E11500A22442 /* InfoPageController.swift */,
 			);
 			path = Travory;
 			sourceTree = "<group>";
@@ -153,6 +156,7 @@
 				3F3B008F256E005A0065CE4C /* splashController.swift in Sources */,
 				3F3B0071256DE52B0065CE4C /* AppDelegate.swift in Sources */,
 				3F3B0073256DE52B0065CE4C /* SceneDelegate.swift in Sources */,
+				3F6077D22575E11500A22442 /* InfoPageController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
