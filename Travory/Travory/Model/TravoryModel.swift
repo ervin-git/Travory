@@ -9,6 +9,17 @@
 import Foundation
 
 struct TravoryModel: Codable {
+    init() {
+        id = 0
+        country = ""
+        destination = ""
+        location = ""
+        lat = 0.0
+        long = 0.0
+        info = []
+        images = []
+    }
+
     let id: Int
     let country: String
     let destination: String
