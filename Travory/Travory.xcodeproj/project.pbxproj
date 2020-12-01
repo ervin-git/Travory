@@ -17,6 +17,7 @@
 		3F3B008F256E005A0065CE4C /* SplashController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3B008E256E005A0065CE4C /* SplashController.swift */; };
 		3F6077D02575CB4700A22442 /* ExplorerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6077CF2575CB4700A22442 /* ExplorerController.swift */; };
 		3F6077D22575E11500A22442 /* InfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6077D12575E11500A22442 /* InfoController.swift */; };
+		3F6077D425762D0D00A22442 /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6077D325762D0D00A22442 /* MapController.swift */; };
 		DABE53232575DE9600C5C47B /* TravoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABE53222575DE9600C5C47B /* TravoryModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,7 @@
 		3F3B008E256E005A0065CE4C /* SplashController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashController.swift; sourceTree = "<group>"; };
 		3F6077CF2575CB4700A22442 /* ExplorerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplorerController.swift; sourceTree = "<group>"; };
 		3F6077D12575E11500A22442 /* InfoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoController.swift; sourceTree = "<group>"; };
+		3F6077D325762D0D00A22442 /* MapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapController.swift; sourceTree = "<group>"; };
 		DABE53222575DE9600C5C47B /* TravoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravoryModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -86,6 +88,7 @@
 				3F3B008E256E005A0065CE4C /* SplashController.swift */,
 				3F6077CF2575CB4700A22442 /* ExplorerController.swift */,
 				3F6077D12575E11500A22442 /* InfoController.swift */,
+				3F6077D325762D0D00A22442 /* MapController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -176,6 +179,7 @@
 				3F3B0071256DE52B0065CE4C /* AppDelegate.swift in Sources */,
 				3F3B0073256DE52B0065CE4C /* SceneDelegate.swift in Sources */,
 				DABE53232575DE9600C5C47B /* TravoryModel.swift in Sources */,
+				3F6077D425762D0D00A22442 /* MapController.swift in Sources */,
 				3F6077D22575E11500A22442 /* InfoController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
