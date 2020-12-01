@@ -34,7 +34,6 @@
 		3F6077CF2575CB4700A22442 /* ExplorerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplorerController.swift; sourceTree = "<group>"; };
 		DABE53222575DE9600C5C47B /* TravoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravoryModel.swift; sourceTree = "<group>"; };
 		3F6077D12575E11500A22442 /* InfoPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPageController.swift; sourceTree = "<group>"; };
->>>>>>> 583dff6a0ee08254607286a09d7dff3748562aaa
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
