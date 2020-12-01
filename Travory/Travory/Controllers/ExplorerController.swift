@@ -30,22 +30,13 @@ class ExplorerController: UITableViewController {
         backgroundImage.contentMode = .scaleAspectFill
         tableView.backgroundView = backgroundImage
     }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "t_exp_info" {
-            let infoController = segue.destination as! InfoController
-            infoController.location = selected
-        }
-    }
 
     // table stuff
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
         return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         return locations.count
     }
     
@@ -56,10 +47,10 @@ class ExplorerController: UITableViewController {
     // cell loading
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        
-        cell.layer.backgroundColor = UIColor.clear.cgColor
         let cell_image = cell.viewWithTag(1) as! UIImageView
         let cell_label = cell.viewWithTag(2) as! UILabel
+        
+        cell.layer.backgroundColor = UIColor.clear.cgColor
         cell_label.textColor = UIColor.white
         cell_label.text = locations[indexPath.row].destination
         
@@ -79,6 +70,13 @@ class ExplorerController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         selected = locations[indexPath.row]
         self.performSegue(withIdentifier: "t_exp_info", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "t_exp_info" {
+            let infoController = segue.destination as! InfoController
+            infoController.location = selected
+        }
     }
     
     // Data
