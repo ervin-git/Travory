@@ -74,15 +74,10 @@
 				3F3B007B256DE52E0065CE4C /* Assets.xcassets */,
 				3F3B0080256DE52E0065CE4C /* Info.plist */,
 				3F3B007D256DE52E0065CE4C /* LaunchScreen.storyboard */,
-<<<<<<< HEAD
 				3F3B008E256E005A0065CE4C /* SplashController.swift */,
 				3F6077CF2575CB4700A22442 /* ExplorerController.swift */,
 				DABE53222575DE9600C5C47B /* TravoryModel.swift */,
-=======
-				3F3B008E256E005A0065CE4C /* splashController.swift */,
-				3F6077CF2575CB4700A22442 /* ListPageController.swift */,
 				3F6077D12575E11500A22442 /* InfoPageController.swift */,
->>>>>>> 583dff6a0ee08254607286a09d7dff3748562aaa
 			);
 			path = Travory;
 			sourceTree = "<group>";
@@ -164,11 +159,8 @@
 				3F3B008F256E005A0065CE4C /* SplashController.swift in Sources */,
 				3F3B0071256DE52B0065CE4C /* AppDelegate.swift in Sources */,
 				3F3B0073256DE52B0065CE4C /* SceneDelegate.swift in Sources */,
-<<<<<<< HEAD
 				DABE53232575DE9600C5C47B /* TravoryModel.swift in Sources */,
-=======
 				3F6077D22575E11500A22442 /* InfoPageController.swift in Sources */,
->>>>>>> 583dff6a0ee08254607286a09d7dff3748562aaa
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
