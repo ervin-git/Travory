@@ -13,22 +13,29 @@ class ExplorerController: UITableViewController {
     var selectedCountry = ""
     var locations = [TravoryModel]()
     var selected = TravoryModel()
-    
+
+        
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         self.navigationController?.setNavigationBarHidden(false, animated: true)
-        
-        let url = URL(string: "http://51.81.34.131/travory.json")
-        if url != nil {
-            download(url!)
-        }
     }
+        
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(true)
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
+    }
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         backgroundImage.contentMode = .scaleAspectFill
         tableView.backgroundView = backgroundImage
+        
+        let url = URL(string: "http://51.81.34.131/travory.json")
+        if url != nil {
+            download(url!)
+        }
     }
 
     // table stuff
