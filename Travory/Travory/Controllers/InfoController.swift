@@ -65,20 +65,18 @@ class InfoController: UIViewController {
     @IBAction func addToFav(_ sender: Any) {
         let defaults = UserDefaults.standard
         
-        if (defaults.array(forKey: "T_Fav")?.count != 0) {
-            var favArray = defaults.object(forKey: "T_Fav") as? [Int] ?? [Int]()
-            if favArray.contains(location.id) {
-                let index = favArray.firstIndex(of: location.id) ?? nil
-                if index != nil {
-                    favArray.remove(at: index!)
-                    defaults.set(favArray, forKey: "T_Fav")
-                    self.favIcon.imageView?.image = UIImage(systemName: "star")
-                }
-            } else {
-                favArray.append(location.id)
+        var favArray = defaults.object(forKey: "T_Fav") as? [Int] ?? [Int]()
+        if favArray.contains(location.id) {
+            let index = favArray.firstIndex(of: location.id) ?? nil
+            if index != nil {
+                favArray.remove(at: index!)
                 defaults.set(favArray, forKey: "T_Fav")
-                self.favIcon.imageView?.image = UIImage(systemName: "star.fill")
+                self.favIcon.imageView?.image = UIImage(systemName: "star")
             }
+        } else {
+            favArray.append(location.id)
+            defaults.set(favArray, forKey: "T_Fav")
+            self.favIcon.imageView?.image = UIImage(systemName: "star.fill")
         }
         
         print(defaults.object(forKey: "T_Fav") as? [Int] ?? [Int]())
