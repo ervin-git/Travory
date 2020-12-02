@@ -112,7 +112,6 @@ class FavoritesController: UITableViewController {
             let downloaded_info = try JSONDecoder().decode(Array<TravoryModel>.self, from: data)
             var temp = [TravoryModel]()
             let favArray = defaults.object(forKey: "T_Fav") as? [Int] ?? [Int]()
-            print("fav", favArray)
             for loc in downloaded_info {
                 if favArray.contains(loc.id) {
                     temp.append(loc)
@@ -121,7 +120,7 @@ class FavoritesController: UITableViewController {
             self.locations = temp
             DispatchQueue.main.async {
                 self.tableView.reloadData()
-                if temp.count == 0 {
+                if self.locations.count == 0 {
                     self.alertUser("No Favorites to Display", "Go to the explore page and choose a location to add to favorites!")
                  }
             }
