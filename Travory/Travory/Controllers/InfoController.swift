@@ -78,8 +78,6 @@ class InfoController: UIViewController {
             defaults.set(favArray, forKey: "T_Fav")
             self.favIcon.imageView?.image = UIImage(systemName: "star.fill")
         }
-        
-        print(defaults.object(forKey: "T_Fav") as? [Int] ?? [Int]())
     }
     
     @IBAction func goToMap(_ sender: Any) {
