@@ -42,10 +42,6 @@ class FavoritesController: UITableViewController {
         if url != nil {
             download(url!)
         }
-        
-        if self.locations.count == 0{
-            alertUser("No Favorites to Display", "Go to the explore page and choose a location to add to favorites!")
-        }
     }
 
     // MARK: - Table view data source
@@ -125,6 +121,9 @@ class FavoritesController: UITableViewController {
             self.locations = temp
             DispatchQueue.main.async {
                 self.tableView.reloadData()
+                if temp.count == 0 {
+                    self.alertUser("No Favorites to Display", "Go to the explore page and choose a location to add to favorites!")
+                 }
             }
         } catch {
             print("Error in decoding JSON data")
