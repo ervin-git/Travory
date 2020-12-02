@@ -17,6 +17,7 @@ class MapController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = selected.destination
         showMap()
     }
     
