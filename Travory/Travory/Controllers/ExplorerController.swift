@@ -84,6 +84,12 @@ class ExplorerController: UITableViewController {
             let infoController = segue.destination as! InfoController
             infoController.location = selected
         }
+//        guard let favController = segue.destination as? FavoritesController,
+//            let _ = tableView.indexPathForSelectedRow?.row
+//            else {
+//                return
+//        }
+//        favController.selectedCountry = self.selectedCountry
     }
     
     // Data
