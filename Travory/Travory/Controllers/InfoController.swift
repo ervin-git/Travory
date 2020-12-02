@@ -32,13 +32,19 @@ class InfoController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        print(self.favIcon.imageView?.image)
+        
         let defaults = UserDefaults.standard
         if (defaults.array(forKey: "T_Fav")?.count != 0) {
             let favArray = defaults.object(forKey: "T_Fav") as? [Int] ?? [Int]()
             if favArray.contains(location.id) {
-                self.favIcon.imageView?.image = UIImage(systemName: "star")
+                DispatchQueue.main.async {
+                    self.favIcon.setImage(UIImage(systemName: "star.fill"), for: .normal)
+                }
             } else {
-                self.favIcon.imageView?.image = UIImage(systemName: "star.fill")
+                DispatchQueue.main.async {
+                    self.favIcon.setImage(UIImage(systemName: "star"), for: .normal)
+                }
             }
         }
         
@@ -71,12 +77,16 @@ class InfoController: UIViewController {
             if index != nil {
                 favArray.remove(at: index!)
                 defaults.set(favArray, forKey: "T_Fav")
-                self.favIcon.imageView?.image = UIImage(systemName: "star")
+                DispatchQueue.main.async {
+                    self.favIcon.setImage(UIImage(systemName: "star"), for: .normal)
+                }
             }
         } else {
             favArray.append(location.id)
             defaults.set(favArray, forKey: "T_Fav")
-            self.favIcon.imageView?.image = UIImage(systemName: "star.fill")
+            DispatchQueue.main.async {
+                self.favIcon.setImage(UIImage(systemName: "star.fill"), for: .normal)
+            }
         }
     }
     
