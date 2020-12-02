@@ -42,6 +42,10 @@ class FavoritesController: UITableViewController {
         if url != nil {
             download(url!)
         }
+        
+        if self.locations.count == 0{
+            alertUser("No Favorites to Display", "Go to the explore page and choose a location to add to favorites!")
+        }
     }
 
     // MARK: - Table view data source
@@ -68,7 +72,7 @@ class FavoritesController: UITableViewController {
         
         cell.layer.backgroundColor = UIColor.clear.cgColor
         cell_label.textColor = UIColor.white
-        cell_label.text = locations[indexPath.row].destination
+        cell_label.text = "\(locations[indexPath.row].destination)\n\(locations[indexPath.row].location)"
         
         URLSession.shared.dataTask(with: URL(string: locations[indexPath.row].images[0])!, completionHandler: {(data, reponse, error) in
             if error != nil {
@@ -126,4 +130,13 @@ class FavoritesController: UITableViewController {
             print("Error in decoding JSON data")
         }
     }
+    
+    // Utils
+    func alertUser(_ msg: String, _ longMsg: String) {
+        let alert = UIAlertController(title: msg, message: longMsg, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Okay", style: .cancel, handler: {_ in self.dismiss(animated: true) }))
+        self.present(alert, animated: true)
+    }
+
+    
 }
