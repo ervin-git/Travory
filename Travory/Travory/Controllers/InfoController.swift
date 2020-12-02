@@ -45,24 +45,20 @@ class InfoController: UIViewController {
         }).resume()
     }
     
+    @IBAction func addToFav(_ sender: Any) {
+        // actually we just add it to favorites array in user defaults and change the icon
+        // check for status on load and change icon accordingly
+        
+    }
+    
+    @IBAction func goToMap(_ sender: Any) {
+        performSegue(withIdentifier: "t_map", sender: self)
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "seg" {
+        if segue.identifier == "t_map" {
             let mapPage = segue.destination as! MapController
             mapPage.selected = location
         }
     }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.location = place[indexPath.row]
-        performSegue(withIdentifier: "seg", sender: self)
-    }
-    
-    @IBAction func addToFav(_ sender: Any) {
-        //link it to favorites page
-    }
-    
-    @IBAction func goToMap(_ sender: Any) {
-        
-    }
-    
 }

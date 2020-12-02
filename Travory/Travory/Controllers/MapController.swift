@@ -14,20 +14,17 @@ class MapController: UIViewController {
     
     var selected = TravoryModel()
     @IBOutlet weak var map: MKMapView!
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         showMap()
     }
     
     func showMap() {
-        
         let span = MKCoordinateSpan(latitudeDelta: 0.01,longitudeDelta: 0.01)
-        let placeLocation = CLLocationCoordinate2DMake(selected.lat, selected.long)
+        let placeLocation = CLLocationCoordinate2DMake(self.selected.lat, self.selected.long)
         let region = MKCoordinateRegion(center: placeLocation, span: span)
-        map.setRegion(region, animated: true)
+        self.map.setRegion(region, animated: true)
         self.map.showsUserLocation = true
         
         let loc = CLLocation(latitude: self.selected.lat, longitude: self.selected.long)
@@ -36,13 +33,11 @@ class MapController: UIViewController {
                 print("Error in Map Loading")
                 return
             }
-
             if let place = placemark?[0] {
                 let annotation = MKPointAnnotation()
                 annotation.coordinate = placeLocation
                 annotation.title = "\(self.selected.destination)"
-
-                //annotation.subtitle = "\(place.locality!), \(place.administrativeArea!), \(place.isoCountryCode!)"
+                annotation.subtitle = "\(place.locality!), \(place.administrativeArea!), \(place.isoCountryCode!)"
                 
                 DispatchQueue.main.async {
                     self.map.addAnnotation(annotation)
@@ -50,6 +45,4 @@ class MapController: UIViewController {
             }
         }
     }
-    
-
 }
