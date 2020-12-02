@@ -17,10 +17,11 @@ class InfoController: UIViewController {
         
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(true)
-        self.navigationController?.setNavigationBarHidden(true, animated: true)
+        self.navigationController?.setNavigationBarHidden(false, animated: true)
     }
 
     var location = TravoryModel()
+    var place = [TravoryModel]()
     
     @IBOutlet weak var image: UIImageView!
     @IBOutlet weak var dest: UILabel!
@@ -44,8 +45,20 @@ class InfoController: UIViewController {
         }).resume()
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "seg" {
+            let mapPage = segue.destination as! MapController
+            mapPage.selected = location
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.location = place[indexPath.row]
+        performSegue(withIdentifier: "seg", sender: self)
+    }
+    
     @IBAction func addToFav(_ sender: Any) {
-        
+        //link it to favorites page
     }
     
     @IBAction func goToMap(_ sender: Any) {
